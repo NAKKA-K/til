@@ -24,13 +24,13 @@ djangoのプロジェクト内のsettings.pyを編集
     ---
     DATABASE = {
         'default': {
-	    'ENGINE': 'django.db.backends.postgresql_psycopg2', # postgreを使用する場合
+            'ENGINE': 'django.db.backends.postgresql_psycopg2', # postgreを使用する場合
             'NAME': 'dw2018db', # アプリケーションで使用するdb
-	    'USER': 'develop17', # postgreのユーザー
-	    'PASSWORD' : 'develop17', # 一つ上のユーザーのパスワード
-	    'HOST' : '127.0.0.1',
-	    'PORT' : 5432, # postgresqlのデフォルトport
-	}
+            'USER': 'develop17', # postgreのユーザー
+            'PASSWORD' : 'develop17', # 一つ上のユーザーのパスワード
+            'HOST' : '127.0.0.1',
+            'PORT' : 5432, # postgresqlのデフォルトport
+        }
     }
 
 上記の設定を反映させるためにマイグレーションを実行する
