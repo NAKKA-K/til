@@ -10,6 +10,7 @@ from django.views.generic.edit import CreateView
 class AccountCreateView(CreateView):
   model = User
   form_class = UserCreationForm
+  #template_nameのデフォルトはtemplates/auth/user_form.html
 
   def get_success_url(self):
     return reverse('login') # urls.pyのnameを指定
