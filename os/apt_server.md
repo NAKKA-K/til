@@ -13,7 +13,11 @@ ubuntuでaptしようと思ったら、404が返り正常に動作しない自�
 
 コマンドを実行したら、もう一度`apt update`して正常にできるか確認する。  
 
-old-release.ubuntu.comにアクセスすることで解決した。  
+今回はold-release.ubuntu.comにアクセスすることで解決した。  
 
 [サポートページ]: http://www.ubuntulinux.jp/ubuntu
 
+
+## オススメ構成
+今までのarchiveを消さずに、追加でbackportsを追加した状態で運用する方が好ましい
+(とは言えまず新しいものにアップグレードするのが一番いい)
