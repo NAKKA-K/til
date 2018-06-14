@@ -58,3 +58,11 @@ case class Postを元に、自動的にJSON用のwritesを作成してくれる�
 ```scala
 implicit val postWrites = Json.writes[Post]
 ```
+
+## JsonのValidation方法
+```scala
+implicit val requestReads: Reads[PostRequest] = (
+  (JsPath \ "user_id").read[String](minLength[String](36)) and
+  (JsPath \ "text").read[String](minLength[String](1) keepAnd maxLength[String](100))
+)(PostRequest.apply _)
+```
