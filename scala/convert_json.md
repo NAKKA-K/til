@@ -52,3 +52,9 @@ case class Post(
     posted_at: String
 )
 ```
+
+## writesの省略メソッド
+case class Postを元に、自動的にJSON用のwritesを作成してくれる。
+```scala
+implicit val postWrites = Json.writes[Post]
+```
