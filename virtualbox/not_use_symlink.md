@@ -13,7 +13,7 @@ Virtualboxはセキュリティ上の理由から、共有フォルダにシン�
 
 ### 共通の解決策
 symlinkを張らないようにオプションを設定する  
-`npm install`であれば`--no-bin-links`フラグを指定することによって、symlinkを生成しない
+例えば`npm install`なら`--no-bin-links`フラグを指定することによって、symlinkを生成しないという解決策がある
 
 ```
 $ npm install --no-bin-links
