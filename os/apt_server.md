@@ -21,3 +21,8 @@ ubuntuでaptしようと思ったら、404が返り正常に動作しない自�
 ## オススメ構成
 今までのarchiveを消さずに、追加でbackportsを追加した状態で運用する方が好ましい
 (とは言えまず新しいものにアップグレードするのが一番いい)
+
+
+# Could not resolve '~'
+`Could not resolve 'ftp.jaist.ac.jp'`が出た。
+`/etc/resolv.conf`にDNSが書かれてない場合などもあるので見て見よう。
